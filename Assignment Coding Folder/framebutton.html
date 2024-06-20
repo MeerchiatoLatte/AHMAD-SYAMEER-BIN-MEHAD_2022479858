@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="stylebutton1.css">
+    <style>
+        body {
+            background-image: url('media/bgimg3.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-family: 'Uncial Antiqua', cursive;
+            color: violet;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000000;
+            margin-top: 50px;
+        }
+        .center-content {
+            text-align: center;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTENT</h1>
+<div class="center-content">
+    <button class="btn" onclick="openInTargetFrame('aboutme.html')">ABOUT ME</button>
+    <button class="btn" onclick="openInTargetFrame('educational.html')">MY EDUCATION</button>
+    <button class="btn" onclick="openInTargetFrame('hobby.html')">MY HOBBY</button>
+    <button class="btn" onclick="openInTargetFrame('resume.html')">RESUME & CONTACT ME</button>
+	<button class="btn" onclick="openInTargetFrame('gallery.html')">GALLERY</button>
+</div>
+<script>
+    function openInTargetFrame(page) {
+        parent.frames['right'].location.href = page;
+    }
+</script>
+    <footer>
+	<center>
+        <p>&copy; 2024 Meerchiato. All rights reserved.</p>
+    </footer>
+	</center>
+</body>
+</html>
+
